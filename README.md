@@ -133,6 +133,17 @@ Run **1.1** then **2.1** once to produce `embed.npy` and `faiss_doc_index.index`
 - `list index out of range` in 5.1 → artifacts mismatch (e.g., embeddings for 5 docs but `docs_list.txt` has 1). Re-run **1.1** then **2.1**.
 - “Context not included” answers → verify 5.1 builds prompts from retrieved `docs_text` and appends `Sources:`.
 
+## Data & Content Licensing
+
+- **data/raw/clinical_demo.md** — synthetic demo text authored by me; contains **no real patient data / PHI**.  
+  License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). You may use and adapt with attribution.
+
+### Third-party components (licenses)
+- **FAISS** — MIT License  
+- **Gradio** — Apache-2.0  
+- **Sentence-Transformers (all-MiniLM-L6-v2)** — Apache-2.0 (see model card for details)
+
+
 ## Demo
 
 ![RAG Chatbot answering ICU question](assets/ui-query.png)
